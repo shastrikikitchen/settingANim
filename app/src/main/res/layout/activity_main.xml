@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLAyout"
+    android:layout_height="match_parent"
+
+   android:background="@color/colorPrimary_accent"
+    tools:context="com.sauda.settinganimation.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/animate"
+        android:padding="20dp"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_svg"
+            />
+    </LinearLayout>
+        <TextView
+            android:layout_below="@+id/animate"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:text="Animation" />
+
+</RelativeLayout>
